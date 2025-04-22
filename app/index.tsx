@@ -28,7 +28,7 @@ export default function Home() {
           <Text>informações</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/devs")}>
+        <TouchableOpacity onPress={() => router.push("/pages/integrantes")}>
           <Text>Desenvolvedores</Text>
         </TouchableOpacity>
       </View>
