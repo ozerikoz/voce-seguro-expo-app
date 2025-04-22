@@ -15,29 +15,29 @@ export default function Home() {
       <StatusBar style="light" />
 
       <Image
-        source={require('../assets/voce_seguro.png')}
+        source={require('../../assets/voce_seguro.png')}
         style={styles.logo}
         resizeMode="contain"
       />
 
       <ScrollView contentContainerStyle={styles.linksContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/denuncia")}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/(tabs)/denuncia")}>
           <Text style={styles.buttonText}>Denúncia</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/apoio")}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/(tabs)/apoio")}>
           <Text style={styles.buttonText}>Apoio e Ajuda</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/dados")}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/(tabs)/dados")}>
           <Text style={styles.buttonText}>Dados</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/info")}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/(tabs)/info")}>
           <Text style={styles.buttonText}>Informações</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/integrantes")}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/(tabs)/integrantes")}>
           <Text style={styles.buttonText}>Desenvolvedores</Text>
         </TouchableOpacity>
       </ScrollView>
