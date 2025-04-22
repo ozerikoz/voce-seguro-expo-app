@@ -1,13 +1,5 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  ScrollView,
-  TouchableOpacity,
-  Linking,
-} from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
-import InfoCard from "../../Components/InfoCard";
+import { StyleSheet, Text, View, ScrollView, Linking } from "react-native";
+import InfoCard from "../Components/InfoCard";
 
 export default function Infos() {
   const informativeLinks = [
