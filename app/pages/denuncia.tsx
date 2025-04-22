@@ -58,31 +58,32 @@ export default function DenunciaPage() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 80, backgroundColor: '#C9C8C8'},
-  titulo: { fontSize: 26, fontWeight: 'bold', textAlign: 'center', marginBottom: 50, color: '#0A3CFF' },
-  texto: { fontSize: 16, textAlign: 'center', marginBottom: 20 },
-  label: { fontSize: 16, marginBottom: 5 },
-  picker: { backgroundColor: '#DBD7D7', marginBottom: 20 },
+  container: { flex: 1, padding: 80, backgroundColor: '#DBD7D7'},
+  titulo: { fontSize: 33,  fontStyle: 'italic', fontWeight: 'bold', textAlign: 'center', marginBottom: 50, color: '#0A3CFF' },
+  texto: { fontSize: 18, textAlign: 'center', marginBottom: 20 },
+  label: { fontSize: 18, marginBottom: 5 },
+  picker: { backgroundColor: '#ffffff', marginBottom: 20 },
   textarea: {
-    backgroundColor: '#DBD7D7',
+    backgroundColor: '#ffffff',
     borderColor: '#ccc',
     borderWidth: 1,
     padding: 10,
     borderRadius: 8,
     textAlignVertical: 'top',
-    marginBottom: 20,
+    marginBottom: 25,
   },
   button: {
     backgroundColor: '#0A3CFF',
     padding: 15,
     borderRadius: 10,
+    marginTop: 50,
     alignItems: 'center',
   },
   buttonText: { color: '#fff', fontSize: 16 },
   mensagem: {
     marginTop: 20,
     color: '#333232',
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center',
   },
 });

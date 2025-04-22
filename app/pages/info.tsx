@@ -74,7 +74,7 @@ export default function InfosPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#DBD7D7",
     padding: 16,
   },
   header: {
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
+    fontStyle: 'italic',
     color: "#0033CC",
     marginBottom: 8,
   },

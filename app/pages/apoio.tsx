@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   },
   ongBox: {
     width: '100%',
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#ffffff',
     padding: 12,
     borderRadius: 8,
     marginVertical: 5,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
   },
   telefone: {
-    fontSize: 18,
+    fontSize: 20,
     color: 'blue',
     textAlign: 'center',
   },

@@ -273,7 +273,7 @@ const DadosPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f7",
+    backgroundColor: "#DBD7D7",
     paddingTop: 16,
   },
   scrollView: {
@@ -291,9 +291,10 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 26,
     fontWeight: "bold",
+    fontStyle: 'italic',
     marginBottom: 12,
     marginTop: 8,
-    color: "#333",
+    color: "#0A3CFF",
     textAlign: "center",
   },
   subTitulo: {
