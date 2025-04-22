@@ -1,10 +1,16 @@
+import { Stack } from "expo-router";
 import React from "react";
-import { ScrollView, Text, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Text } from "react-native";
 import Integrante from "../Components/Integrante";
 
 export default function IntegrantesPage() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
+      <Stack.Screen
+        options={{
+          title: "Integrantes",
+        }}
+      />
       <Text style={styles.title}>Desenvolvedores</Text>
 
       <Integrante

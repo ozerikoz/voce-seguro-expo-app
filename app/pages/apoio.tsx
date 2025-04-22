@@ -1,6 +1,6 @@
+import { Stack } from 'expo-router';
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Linking, ScrollView, Image } from 'react-native';
-import TelefoneBox from '../Components/TelefoneBox';
+import { Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function Apoio() {
   const ongs = [
@@ -28,13 +28,18 @@ export default function Apoio() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
+      <Stack.Screen
+        options={{
+          title: "Apoio e Ajuda",
+        }}
+      />
       <Text style={styles.titulo}>Apoio e Ajuda</Text>
 
       <Image
-                source={require("../../assets/apoio.png")}
-                style={styles.imagem}
-                resizeMode="contain"
-              />
+        source={require("../../assets/apoio.png")}
+        style={styles.imagem}
+        resizeMode="contain"
+      />
 
       <Text style={styles.subtitulo}>
         Aqui está uma lista de diferentes ONGs e importantes números disponíveis para ligação que podem ajudar você e que podem oferecer suporte em momentos difíceis. Não hesite em buscar ajuda!
@@ -56,7 +61,7 @@ export default function Apoio() {
       <Text style={styles.subtitulo2}>Telefones úteis</Text>
 
       <View style={styles.telefonesContainer}>
-      <View style={styles.telefoneBox}>
+        <View style={styles.telefoneBox}>
           <TouchableOpacity onPress={() => Linking.openURL('tel:188')}>
             <Text style={styles.telefone}>Disque 188</Text>
             <Text style={styles.desc}>Centro de valorização da vida</Text>
@@ -88,7 +93,7 @@ export default function Apoio() {
           source={require('../../assets/ligando_telefone.png')}
           style={styles.imagem}
         />
-        
+
       </View>
     </ScrollView>
   );
@@ -171,5 +176,5 @@ const styles = StyleSheet.create({
     marginVertical: 15,
     alignSelf: "center",
   },
-  
+
 });

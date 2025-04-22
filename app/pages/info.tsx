@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View, ScrollView, Linking, Image } from "react-native";
+import { Stack } from "expo-router";
+import { Linking, ScrollView, StyleSheet, Text, View } from "react-native";
 import InfoCard from "../Components/InfoCard";
 
 export default function InfosPage() {
@@ -51,6 +52,11 @@ export default function InfosPage() {
 
   return (
     <ScrollView style={styles.container}>
+      <Stack.Screen
+        options={{
+          title: "Informações",
+        }}
+      />
       <View style={styles.header}>
         <Text style={styles.title}>Informações</Text>
       </View>
@@ -87,7 +93,7 @@ const styles = StyleSheet.create({
     height: 150,
     marginTop: 10,
     marginBottom: 20,
-  },  
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",

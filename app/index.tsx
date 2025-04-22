@@ -1,11 +1,17 @@
-import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from "react-native";
+import { Stack, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { router } from "expo-router";
+import React from "react";
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   return (
     <View style={styles.container}>
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+      />
+
       <StatusBar style="light" />
 
       <Image

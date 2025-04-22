@@ -1,15 +1,16 @@
+import { Stack } from "expo-router";
 import React, { useEffect, useState } from "react";
 
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  Dimensions,
   ActivityIndicator,
-  TouchableOpacity,
-  SafeAreaView,
+  Dimensions,
   RefreshControl,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 import { LineChart } from "react-native-chart-kit";
@@ -146,6 +147,11 @@ const DadosPage = () => {
   if (carregando) {
     return (
       <View style={styles.containerCentralizado}>
+        <Stack.Screen
+          options={{
+            title: "Dados",
+          }}
+        />
         <ActivityIndicator size="large" color="#5185f2" />
         <Text style={styles.textoCarregando}>Carregando dados...</Text>
       </View>
@@ -156,6 +162,11 @@ const DadosPage = () => {
   if (erro) {
     return (
       <View style={styles.containerCentralizado}>
+        <Stack.Screen
+          options={{
+            title: "Dados",
+          }}
+        />
         <Text style={styles.textoErro}>{erro}</Text>
         <TouchableOpacity
           style={styles.botaoTentarNovamente}
@@ -172,6 +183,11 @@ const DadosPage = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Stack.Screen
+        options={{
+          title: "Dados",
+        }}
+      />
       <ScrollView
         style={styles.scrollView}
         refreshControl={

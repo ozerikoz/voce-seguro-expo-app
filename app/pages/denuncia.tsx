@@ -1,15 +1,16 @@
+import { Picker } from "@react-native-picker/picker";
+import { Stack } from "expo-router";
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  TextInput,
   Alert,
   Image,
   ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import { Picker } from "@react-native-picker/picker";
 
 export default function DenunciaPage() {
   const [tipo, setTipo] = useState("");
@@ -29,6 +30,11 @@ export default function DenunciaPage() {
 
   return (
     <ScrollView>
+      <Stack.Screen
+        options={{
+          title: "Denúncia",
+        }}
+      />
       <View style={styles.container}>
         <Text style={styles.titulo}>Denúncia</Text>
         <Image
