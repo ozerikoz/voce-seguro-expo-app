@@ -41,10 +41,12 @@ export default function IntegrantesPage() {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#DBD7D7",
   },
   title: {
     fontSize: 24,
+    color: '#0A3CFF',
+    fontStyle: 'italic',
     fontWeight: "bold",
     alignSelf: "center",
     marginBottom: 24,

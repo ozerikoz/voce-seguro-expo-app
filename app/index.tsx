@@ -1,42 +1,81 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Button } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { router } from "expo-router";
 
 export default function Home() {
   return (
-    <View>
-      <StatusBar style="auto" />
+    <View style={styles.container}>
+      <StatusBar style="light" />
 
-      <Text>Você seguro</Text>
-
-      <Button
-        title="Denúncia anônima"
-        onPress={() => router.push("/pages/(tabs)/home")}
+      <Image
+        source={require('../assets/voce_seguro.png')}
+        style={styles.logo}
+        resizeMode="contain"
       />
 
-
-      <View>
-        <TouchableOpacity onPress={() => router.push("/pages/denuncia")}>
-          <Text>Denúncia</Text>
+      <ScrollView contentContainerStyle={styles.linksContainer}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/denuncia")}>
+          <Text style={styles.buttonText}>Denúncia</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/apoio")}>
-          <Text>Apoio e ajuda</Text>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/apoio")}>
+          <Text style={styles.buttonText}>Apoio e Ajuda</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/dados")}>
-          <Text>Dados</Text>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/dados")}>
+          <Text style={styles.buttonText}>Dados</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/info")}>
-          <Text>informações</Text>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/info")}>
+          <Text style={styles.buttonText}>Informações</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/integrantes")}>
-          <Text>Desenvolvedores</Text>
+        <TouchableOpacity style={styles.button} onPress={() => router.push("/pages/integrantes")}>
+          <Text style={styles.buttonText}>Desenvolvedores</Text>
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#DBD7D7',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 16,
+  },
+  title: {
+    fontSize: 26,
+    color: '#0A3CFF',
+    fontWeight: 'bold',
+    marginBottom: 30,
+  },
+  linksContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 30,
+  },
+  button: {
+    backgroundColor: '#0A3CFF',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 12,
+    elevation: 3,
+    width: 250,
+    alignItems: 'center',
+  },
+  logo: {
+    width: 300,
+    height: 150,
+    marginTop: 70,
+    marginBottom: 100,
+  },
+  buttonText: {
+    color: '#ffffff',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+});
