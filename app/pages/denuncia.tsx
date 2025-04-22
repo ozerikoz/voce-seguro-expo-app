@@ -31,6 +31,11 @@ export default function DenunciaPage() {
     <ScrollView>
       <View style={styles.container}>
         <Text style={styles.titulo}>Denúncia</Text>
+        <Image
+          source={require("../../assets/Sirene.png")}
+          style={styles.imagem}
+          resizeMode="contain"
+        />
         <Text style={styles.texto}>
           Nesta página você pode registrar sua denúncia. Selecione o tipo e
           descreva o ocorrido de forma anônima.
@@ -82,7 +87,7 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom: 50,
+    marginBottom: 10,
     color: "#0A3CFF",
   },
   texto: { fontSize: 18, textAlign: "center", marginBottom: 20 },
@@ -112,9 +117,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   imagem: {
-    width: "100%",
-    height: 180,
-    marginTop: 30,
-    borderRadius: 12,
+    width: 100,
+    height: 100,
+    marginVertical: 15,
+    alignSelf: "center",
   },
 });

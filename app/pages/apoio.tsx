@@ -30,6 +30,12 @@ export default function Apoio() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.titulo}>Apoio e Ajuda</Text>
 
+      <Image
+                source={require("../../assets/apoio.png")}
+                style={styles.imagem}
+                resizeMode="contain"
+              />
+
       <Text style={styles.subtitulo}>
         Aqui está uma lista de diferentes ONGs e importantes números disponíveis para ligação que podem ajudar você e que podem oferecer suporte em momentos difíceis. Não hesite em buscar ajuda!
       </Text>
@@ -101,12 +107,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'blue',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 5,
     paddingHorizontal: 10,
   },
   subtitulo: {
     fontSize: 16,
-    marginVertical: 10,
+    marginVertical: 5,
     textAlign: 'center',
     paddingHorizontal: 20,
   },
@@ -160,11 +166,10 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   imagem: {
-    width: '60%',
-    height: 300,
-    marginTop: 30,
-    borderRadius: 12,
-    alignSelf: 'center',
+    width: 90,
+    height: 130,
+    marginVertical: 15,
+    alignSelf: "center",
   },
   
 });
