@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Image } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 export default function DenunciaPage() {
@@ -52,6 +52,12 @@ export default function DenunciaPage() {
         <Text style={styles.buttonText}>Enviar denúncia</Text>
       </TouchableOpacity>
 
+      <Image
+        source={require('../../assets/help_mobile.png')}
+        style={styles.imagem}
+        resizeMode="contain"
+      />
+
       {mensagem ? <Text style={styles.mensagem}>{mensagem}</Text> : null}
     </View>
   );
@@ -85,4 +91,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
   },
+  imagem: {
+    width: '100%',
+    height: 180,
+    marginTop: 30,
+    borderRadius: 12,
+  },
+  
 });

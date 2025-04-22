@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Linking, ScrollView, Image } from 'react-native';
 import TelefoneBox from '../Components/TelefoneBox';
 
 export default function Apoio() {
@@ -72,11 +72,17 @@ export default function Apoio() {
         </View>
 
         <View style={styles.telefoneBox}>
-          <TouchableOpacity onPress={() => Linking.openURL('tel:188')}>
+          <TouchableOpacity onPress={() => Linking.openURL('tel:100')}>
             <Text style={styles.telefone}>Disque 100</Text>
             <Text style={styles.desc}>Direitos Humanos</Text>
           </TouchableOpacity>
         </View>
+
+        <Image
+          source={require('../../assets/ligando_telefone.png')}
+          style={styles.imagem}
+        />
+        
       </View>
     </ScrollView>
   );
@@ -153,4 +159,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 2,
   },
+  imagem: {
+    width: '60%',
+    height: 300,
+    marginTop: 30,
+    borderRadius: 12,
+  },
+  
 });
