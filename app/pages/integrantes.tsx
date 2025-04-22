@@ -9,7 +9,7 @@ export default function IntegrantesPage() {
 
       <Integrante
         nome="Julio Cesar"
-        rm="RM557298"
+        rm="557298"
         sala="2TDSPF"
         imgSrc={require("../../assets/julio.jpg")}
         githubUrl="https://github.com/Julio-CRodrigues"
@@ -18,7 +18,7 @@ export default function IntegrantesPage() {
 
       <Integrante
         nome="Gustavo de Aguiar"
-        rm="RM557707"
+        rm="557707"
         sala="2TDSPF"
         imgSrc={require("../../assets/gustavo.jpg")}
         githubUrl="https://github.com/gudeaguiar"
@@ -27,7 +27,7 @@ export default function IntegrantesPage() {
 
       <Integrante
         nome="Erik Paschoalatto"
-        rm="RM554854"
+        rm="554854"
         sala="2TDSPF"
         imgSrc={require("../../assets/erik.jpg")}
         githubUrl="https://github.com/ozerikoz"
