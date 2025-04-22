@@ -58,8 +58,8 @@ export default function DenunciaPage() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 80},
-  titulo: { fontSize: 26, fontWeight: 'bold', textAlign: 'center', marginBottom: 50, color: '#9A0AFF' },
+  container: { flex: 1, padding: 80, backgroundColor: '#C9C8C8'},
+  titulo: { fontSize: 26, fontWeight: 'bold', textAlign: 'center', marginBottom: 50, color: '#0A3CFF' },
   texto: { fontSize: 16, textAlign: 'center', marginBottom: 20 },
   label: { fontSize: 16, marginBottom: 5 },
   picker: { backgroundColor: '#DBD7D7', marginBottom: 20 },
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#9A0AFF',
+    backgroundColor: '#0A3CFF',
     padding: 15,
     borderRadius: 10,
     alignItems: 'center',

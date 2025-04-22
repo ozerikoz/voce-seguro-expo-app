@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView, Linking } from "react-native";
+import { StyleSheet, Text, View, ScrollView, Linking, Image } from "react-native";
 import InfoCard from "../Components/InfoCard";
 
 export default function Infos() {
@@ -82,6 +82,12 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     alignItems: "center",
   },
+  banner: {
+    width: '100%',
+    height: 150,
+    marginTop: 10,
+    marginBottom: 20,
+  },  
   title: {
     fontSize: 24,
     fontWeight: "bold",

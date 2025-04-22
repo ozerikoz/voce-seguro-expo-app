@@ -15,12 +15,17 @@ export default function Home() {
         onPress={() => router.push("/pages/(tabs)/home")}
       />
 
+
       <View>
-        <TouchableOpacity onPress={() => router.push("/pages/help")}>
+        <TouchableOpacity onPress={() => router.push("/pages/denuncia")}>
+          <Text>Denúncia</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => router.push("/pages/apoio")}>
           <Text>Apoio e ajuda</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => router.push("/pages/data")}>
+        <TouchableOpacity onPress={() => router.push("/pages/dados")}>
           <Text>Dados</Text>
         </TouchableOpacity>
 
