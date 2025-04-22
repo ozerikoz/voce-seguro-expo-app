@@ -31,11 +31,11 @@ export default function Integrante({
 
       <View style={styles.social}>
         <TouchableOpacity onPress={() => abrirLink(githubUrl)} style={styles.socialItem}>
-          <Image source={require("../../../assets/github.png")} style={styles.icon} />
+          <Image source={require("../../assets/github.svg")} style={styles.icon} />
           <Text style={styles.linkText}>Github</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => abrirLink(linkedinUrl)} style={styles.socialItem}>
-          <Image source={require("../../../assets/linkedin.png")} style={styles.icon} />
+          <Image source={require("../../assets/linkedin.svg")} style={styles.icon} />
           <Text style={styles.linkText}>LinkedIn</Text>
         </TouchableOpacity>
       </View>

@@ -9,11 +9,11 @@ export default function IntegrantesPage() {
 
       <Integrante
         nome="Julio Cesar"
-        rm="RM123456"
-        sala="1TDSPF"
-        imgSrc={require("../assets/julio.jpeg")}
-        githubUrl="https://github.com/seuusuario"
-        linkedinUrl="https://linkedin.com/in/seuusuario"
+        rm="RM557298"
+        sala="2TDSPF"
+        imgSrc={require("../../assets/julio.jpg")}
+        githubUrl="https://github.com/Julio-CRodrigues"
+        linkedinUrl="https://www.linkedin.com/in/julio-cesar-rodrigues29/"
       />
 
       {/* Adicione mais integrantes se desejar */}
