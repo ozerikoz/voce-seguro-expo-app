@@ -16,7 +16,24 @@ export default function IntegrantesPage() {
         linkedinUrl="https://www.linkedin.com/in/julio-cesar-rodrigues29/"
       />
 
-      {/* Adicione mais integrantes se desejar */}
+      <Integrante
+        nome="Gustavo de Aguiar"
+        rm="RM557707"
+        sala="2TDSPF"
+        imgSrc={require("../../assets/gustavo.jpg")}
+        githubUrl="https://github.com/gudeaguiar"
+        linkedinUrl="https://www.linkedin.com/in/gustavo-de-aguiar-sn160308/"
+      />
+
+      <Integrante
+        nome="Erik Paschoalatto"
+        rm="RM554854"
+        sala="2TDSPF"
+        imgSrc={require("../../assets/erik.jpg")}
+        githubUrl="https://github.com/ozerikoz"
+        linkedinUrl="https://www.linkedin.com/in/erikpaschoalatto/"
+      />
+
     </ScrollView>
   );
 }
