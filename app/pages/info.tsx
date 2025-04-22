@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView, Linking, Image } from "react-native";
 import InfoCard from "../Components/InfoCard";
 
-export default function Infos() {
+export default function InfosPage() {
   const informativeLinks = [
     {
       title: "O que é Racismo?",

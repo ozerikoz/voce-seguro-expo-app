@@ -23,20 +23,18 @@ export default function Integrante({
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.card}>
       <Image source={imgSrc} style={styles.foto} />
       <Text style={styles.nome}>{nome}</Text>
       <Text style={styles.rm}>RM: {rm}</Text>
       <Text style={styles.sala}>{sala}</Text>
 
-      <View style={styles.social}>
-        <TouchableOpacity onPress={() => abrirLink(githubUrl)} style={styles.socialItem}>
-          <Image source={require("../../assets/github.svg")} style={styles.icon} />
-          <Text style={styles.linkText}>Github</Text>
+      <View style={styles.socialContainer}>
+        <TouchableOpacity onPress={() => abrirLink(githubUrl)}>
+          <Text style={styles.link}>Github</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => abrirLink(linkedinUrl)} style={styles.socialItem}>
-          <Image source={require("../../assets/linkedin.svg")} style={styles.icon} />
-          <Text style={styles.linkText}>LinkedIn</Text>
+        <TouchableOpacity onPress={() => abrirLink(linkedinUrl)}>
+          <Text style={styles.link}>LinkedIn</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -44,46 +42,45 @@ export default function Integrante({
 }
 
 const styles = StyleSheet.create({
-  container: {
+  card: {
+    backgroundColor: "#F5F6FA",
+    borderRadius: 16,
+    padding: 24,
     alignItems: "center",
-    padding: 16,
     marginBottom: 24,
-    backgroundColor: "#f0f0f0",
-    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    elevation: 4,
   },
   foto: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    marginBottom: 12,
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    marginBottom: 16,
   },
   nome: {
     fontSize: 18,
     fontWeight: "bold",
+    marginBottom: 4,
   },
   rm: {
     fontSize: 14,
+    color: "#555",
   },
   sala: {
     fontSize: 14,
-    marginBottom: 8,
+    color: "#555",
+    marginBottom: 12,
   },
-  social: {
+  socialContainer: {
     flexDirection: "row",
-    marginTop: 10,
+    gap: 20,
   },
-  socialItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginHorizontal: 10,
-  },
-  icon: {
-    width: 20,
-    height: 20,
-    marginRight: 6,
-  },
-  linkText: {
-    fontSize: 14,
+  link: {
     color: "#007AFF",
+    fontSize: 16,
+    fontWeight: "500",
   },
 });
