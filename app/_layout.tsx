@@ -10,9 +10,14 @@ export default function Layout() {
 
   useEffect(() => {
     async function prepare() {
-      // Simula carregamento de recursos
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setAppIsReady(true);
+      try {
+        
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setAppIsReady(true);
+      }
     }
 
     prepare();
